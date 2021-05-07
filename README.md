@@ -9,11 +9,11 @@ Product Junkies
 The purpose of this web application is to provide users with an outlet to declutter their product drawers. Users will post products that they purchasesd but for some reason no longer use, and will allow anyone who comes to the site the ability to claim the item. Ultimately, providing users the ability to declutter their space, while giving other users a chance to try new products for free! Similar to Facebook Marketplace and Craigslist, users will interact via messages or the agreed upon method of communication to finalize the exchange.
 
 ## Wireframes
-The wireframe below depicts the landing page, and the view users will see when adding a product.
+
 ![image](https://user-images.githubusercontent.com/80142574/117384370-c8b95b80-aeb0-11eb-8542-5176c49c4a6a.png)
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![image](https://user-images.githubusercontent.com/80142574/117393958-3a020a00-aec3-11eb-8a2a-5e8a1acc683c.png)
 
 ## API and Data Sample
 
@@ -68,7 +68,6 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
   
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Get and post product posts from Airtable
 - Use form to create a post
@@ -76,7 +75,6 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 - Use search bar to look for products 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Create user account
 - Allow users to delete post
@@ -85,8 +83,6 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 - Create link to Amazon for additional product details
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -100,10 +96,6 @@ This schedule will be used to keep track of your progress throughout the week an
 |May 14| Presentations | Incomplete
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
