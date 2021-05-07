@@ -116,7 +116,7 @@ The purpose of this web application is to provide users with an outlet to declut
 | Data edit and deletion | M| 2hrs| 1hrs | 1hrs |
 | Review of Functionality | H | 2hrs| 1hrs | 1hrs |
 | Presentation Run Through | H | 1hrs| 1hrs | 1hrs |
-| Total | H | 39.5hrs| 36.5hrs | 36.5hrs |
+| Total | H | 38.5hrs| 36.5hrs | 36.5hrs |
 ## SWOT Analysis
 
 ### Strengths:
