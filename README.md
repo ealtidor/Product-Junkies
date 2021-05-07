@@ -9,7 +9,7 @@ Product Junkies
 The purpose of this web application is to provide users with an outlet to declutter their product drawers. Users will post products that they purchasesd but for some reason no longer use, and will allow anyone who comes to the site the ability to claim the item. Ultimately, providing users the ability to declutter their space, while giving other users a chance to try new products for free! Similar to Facebook Marketplace and Craigslist, users will interact via messages or the agreed upon method of communication to finalize the exchange.
 
 ## Wireframes
-The wireframe below depicts the landing page and the view users will see when adding a product.
+The wireframe below depicts the landing page, and the view users will see when adding a product.
 ![image](https://user-images.githubusercontent.com/80142574/117384370-c8b95b80-aeb0-11eb-8542-5176c49c4a6a.png)
 
 ## Component Hierarchy
