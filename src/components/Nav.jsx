@@ -5,7 +5,7 @@ function Nav() {
 
   return (
     <nav>
-      <Link to ="/">Product Junkies</Link>
+      <Link to="/">Product Junkies</Link>
     </nav>
   )
 }

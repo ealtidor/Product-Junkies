@@ -1,5 +1,6 @@
 import Nav from "./components/Nav"
-import { Route } from "react-router-dom"
+import Form from "./components/Form"
+import { Route, Link } from "react-router-dom"
 import Home from "./components/Home"
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -23,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Route path="/">
+      <Link to ="/new">Post Your Junk</Link>
+      <Route exact path="/">
         <main>
         <h3> Today's Pick</h3>
         {posts.map((post) => (
@@ -32,7 +34,9 @@ function App() {
         </main>
         
       </Route>
-    
+      <Route path="/new">
+         <Form />
+      </Route>
     </div>
   );
 }
