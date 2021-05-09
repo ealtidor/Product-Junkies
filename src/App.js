@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import './App.css';
+import Favorites from "./components/Favorites";
 
 // Get Request
 function App() {
@@ -24,7 +25,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Link to ="/new">Post Your Junk</Link>
+      <hr />
+      <Route path="/favorites">
+        <Favorites/>
+      </Route>
       <Route exact path="/">
         <main>
         <h3> Today's Pick</h3>
@@ -32,7 +36,6 @@ function App() {
         <Home post={post} setToggleFetch={setToggleFetch}/>
         ))};
         </main>
-        
       </Route>
       <Route path="/new">
         <Form  setToggleFetch={setToggleFetch}/>

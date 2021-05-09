@@ -2,3 +2,32 @@
   text-align: center;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 3rem;
+  align-items: center;
+}
+
+.header{
+text-decoration: none;
+font-weight: 800;
+font-size: 2.5rem;
+color: rgb(42, 134, 120)  ;
+}
+
+.search{
+  width: 50%;
+  padding:10px;
+  border-radius:10px;
+  color: black;
+  font-size: 18px;
+  opacity: 80%;
+}
+
+.plus-sign{
+  color: rgb(42, 134, 120)
+}
+hr {
+  margin: 1rem 2rem 1rem 2rem;
+}
