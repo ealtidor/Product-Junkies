@@ -22,7 +22,7 @@ function Home(props) {
       <p>{brand}</p>
       <p>{productName}</p>
       <p>{quantityLeft}</p>
-      <button onClick={deletePost}>DELETE</button>
+      <button onClick={deletePost}>REMOVE JUNK</button>
       </div>
     
   )
