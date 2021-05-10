@@ -88,4 +88,11 @@ color: rgb(42, 134, 120)  ;
   font-size: 1.4rem;
   color: rgb(42, 134, 120)  ; 
 }
+.aside-cat{
+  grid-row: 3/span 1;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: rgb(42, 134, 120) 
+}
+
 
