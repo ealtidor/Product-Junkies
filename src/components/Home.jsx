@@ -2,7 +2,7 @@ import axios from "axios";
 import { baseURL, config } from "../services";
 import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
-import {useState} from 'react'
+import { useState } from "react";
 
 function Home(props) {
   const [category, setCategory] = useState("");
@@ -16,13 +16,14 @@ function Home(props) {
   const { posts } = props;
   const categories = posts.reduce((acc, post) => {
     if (!acc.includes(post.fields.category)) {
-      acc.push(post.fields.category)
+      acc.push(post.fields.category);
     }
-    return acc
-  },[])
- 
-  const filteredPosts = posts.filter((post) => post.fields.category.includes(category))
+    return acc;
+  }, []);
 
+  const filteredPosts = posts.filter((post) =>
+    post.fields.category.includes(category)
+  );
 
   return (
     <div>
@@ -39,16 +40,20 @@ function Home(props) {
           <label className="aside-cat" htmlFor="category">
             SHOP BY CATEGORY
           </label>
-          <select value={category}  onChange={(e) => setCategory(e.target.value)}>
-            <option disabled={category} selected>---</option>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option disabled={category} selected>
+              ---
+            </option>
             {categories.map((category) => {
-              return (
-                <option value={category}>
-                  {category}
-                </option>
-              );
+              return <option value={category}>{category}</option>;
             })}
           </select>
+          <button type="button" onClick={()=> setCategory("")}>
+            Reset
+          </button>
         </aside>
         <span
           style={{
