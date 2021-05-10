@@ -7,7 +7,8 @@ import axios from "axios";
 import { baseURL, config } from "./services";
 import './App.css';
 import Favorites from "./components/Favorites";
-import ImageSlider  from "./components/ImageSlider";
+import Filter from "./components/Filter"
+
 
 // Get Request
 function App() {
@@ -27,21 +28,16 @@ function App() {
     <div className="App">
       <Nav />
       <hr />
-      <ImageSlider/>
       <Route path="/favorites">
         <Favorites/>
       </Route>
       <Route exact path="/">
-        <main>
-        <h3> Today's Pick</h3>
-        {posts.map((post) => (
-        <Home post={post} setToggleFetch={setToggleFetch}/>
-        ))};
-        </main>
+      <Home posts={posts} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/new">
         <Form  setToggleFetch={setToggleFetch}/>
       </Route>
+      <Route path="/filter" component={Filter}/>
     </div>
   );
 }
