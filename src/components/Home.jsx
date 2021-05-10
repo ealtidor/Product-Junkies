@@ -18,12 +18,16 @@ function Home(props) {
   return (
     <div>
       <ImageSlider />
+      <h3 className="sub-header"> Today's Pick</h3>
       <main>
         <aside>
-          <Link to="/new">+ POST YOUR JUNK</Link>
-          <Link to="/filter">FILTERS</Link>
+          <Link className="aside-junk" to="/new">+ POST YOUR JUNK</Link>
+          <Link className="aside-filter" to="/filter">FILTERS</Link>
         </aside>
-        <h3> Today's Pick</h3>
+        <span style={{
+          display: "inline-block", width: "1px", height: "100%",
+          background: " rgb(42, 134, 120)", margin: "0 2px"
+        }}></span>
         <section>
         {posts.map((post) => {  
           const { avatarImg, username, createdTime, productImg, brand,
