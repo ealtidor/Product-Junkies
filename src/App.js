@@ -12,9 +12,10 @@ import { useState, useEffect } from "react";
 
 // Get Request
 function App() {
+  const [findPost, setFindPost] = useState("")
   const [posts, setPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-
+console.log(findPost)
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav posts={posts}/>
+      <Nav  />
       <hr />
       <Route path="/favorites">
         <Favorites/>

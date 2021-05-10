@@ -31,10 +31,10 @@ const Form = (props) => {
     props.setToggleFetch((curr) => !curr);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="add-post" onSubmit={handleSubmit}>
       <label htmlFor="avatarImg">Profile Picture</label>
       <input
-        type="file"
+        type="text"
         id="country"
         onChange={(e) => setAvatarImg(e.target.value)}
       />
@@ -44,7 +44,7 @@ const Form = (props) => {
         id="username"
         onChange={(e) => setUsername(e.target.value)}
       />
-      <label htmlFor="zipCode">zipCode</label>
+      <label htmlFor="zipCode">Zip Code</label>
       <input
         type="text"
         id="zipCode"
@@ -52,7 +52,7 @@ const Form = (props) => {
       />
       <label htmlFor="productImg">Product Image Upload</label>
       <input
-        type="file"
+        type="text"
         id="productImg"
         onChange={(e) => setProductImg(e.target.value)}
       />
