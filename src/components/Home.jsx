@@ -2,8 +2,11 @@ import axios from "axios";
 import { baseURL, config } from "../services";
 import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
+import {useState} from 'react'
 
 function Home(props) {
+  const [category, setCategory] = useState("");
+
   const deletePost = async (postID) => {
     const specificURL = `${baseURL}/${postID}`;
     await axios.delete(specificURL, config);
@@ -11,7 +14,16 @@ function Home(props) {
   };
 
   const { posts } = props;
-  console.log(posts);
+  const categories = posts.reduce((acc, post) => {
+    if (!acc.includes(post.fields.category)) {
+      acc.push(post.fields.category)
+    }
+    return acc
+  },[])
+ 
+  const filteredPosts = posts.filter((post) => post.fields.category.includes(category))
+
+
   return (
     <div>
       <ImageSlider />
@@ -27,11 +39,12 @@ function Home(props) {
           <label className="aside-cat" htmlFor="category">
             SHOP BY CATEGORY
           </label>
-          <select value="">
-            {posts.map((post) => {
+          <select value={category}  onChange={(e) => setCategory(e.target.value)}>
+            <option disabled={category} selected>---</option>
+            {categories.map((category) => {
               return (
-                <option value={post.fields.category}>
-                  {post.fields.category}
+                <option value={category}>
+                  {category}
                 </option>
               );
             })}
@@ -47,7 +60,7 @@ function Home(props) {
           }}
         ></span>
         <section>
-          {posts.map((post) => {
+          {filteredPosts.map((post) => {
             const {
               avatarImg,
               username,

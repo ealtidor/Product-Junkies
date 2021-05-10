@@ -74,7 +74,7 @@ const Form = (props) => {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       >
-        <option disabled selected>
+        <option disabled={category} selected>
           Pick One
         </option>
         <option value="Hair">HAIR</option>
