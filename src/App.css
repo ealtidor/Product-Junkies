@@ -31,3 +31,18 @@ color: rgb(42, 134, 120)  ;
 hr {
   margin: 1rem 2rem 1rem 2rem;
 }
+
+#slider-img{
+  height: 32rem;
+  width: 66rem;
+  justify-content: center
+}
+
+.caption{
+  text-align: left;
+  font-size: 2.5rem;
+  background-color:rgb(42, 134, 120);
+  width: 25rem;
+  text-align: center;
+  align-items: center;
+}

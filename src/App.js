@@ -1,12 +1,13 @@
 import Nav from "./components/Nav"
 import Form from "./components/Form"
-import { Route, Link } from "react-router-dom"
+import { Route} from "react-router-dom"
 import Home from "./components/Home"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import './App.css';
 import Favorites from "./components/Favorites";
+import ImageSlider  from "./components/ImageSlider";
 
 // Get Request
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <Nav />
       <hr />
+      <ImageSlider/>
       <Route path="/favorites">
         <Favorites/>
       </Route>
