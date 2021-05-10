@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  z-index: 0;
 }
 
 .navbar{
@@ -17,7 +18,7 @@ color: rgb(42, 134, 120)  ;
 }
 
 .search{
-  width: 50%;
+  width: 50rem;
   padding:10px;
   border-radius:10px;
   color: black;
@@ -95,4 +96,17 @@ color: rgb(42, 134, 120)  ;
   color: rgb(42, 134, 120) 
 }
 
+.typehead-container{
+  position: relative;
+  
+}
+
+.results-container{
+  width:50rem ;
+  margin: 0 auto;
+  border: 1px solid rgb(42, 134, 120);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 5;
+}
 
