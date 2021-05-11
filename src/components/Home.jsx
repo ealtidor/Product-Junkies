@@ -25,6 +25,13 @@ function Home(props) {
     post.fields.category.includes(category)
   );
 
+  const searchBar =  posts.filter((post) =>
+  post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
+);
+  console.log("find", searchBar)
+  console.log("find", props.findPost.toLowerCase())
+
+  const sortedList=props.findPost ? searchBar : filteredPosts
   return (
     <div>
       <ImageSlider />
@@ -51,7 +58,7 @@ function Home(props) {
               return <option value={category}>{category}</option>;
             })}
           </select>
-          <button type="button" onClick={()=> setCategory("")}>
+          <button type="button" onClick={() => setCategory("")}>
             Reset
           </button>
         </aside>
@@ -65,7 +72,7 @@ function Home(props) {
           }}
         ></span>
         <section>
-          {filteredPosts.map((post) => {
+          {sortedList.map((post) => {
             const {
               avatarImg,
               username,

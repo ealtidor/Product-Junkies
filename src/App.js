@@ -1,21 +1,19 @@
-import Nav from "./components/Nav"
-import Form from "./components/Form"
-import { Route} from "react-router-dom"
-import Home from "./components/Home"
+import Nav from "./components/Nav";
+import Form from "./components/Form";
+import { Route } from "react-router-dom";
+import Home from "./components/Home";
 import axios from "axios";
 import { baseURL, config } from "./services";
-import './App.css';
+import "./App.css";
 import Favorites from "./components/Favorites";
-import Filter from "./components/Filter"
+import Filter from "./components/Filter";
 import { useState, useEffect } from "react";
-
 
 // Get Request
 function App() {
-  const [findPost, setFindPost] = useState("")
+  const [findPost, setFindPost] = useState("");
   const [posts, setPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-console.log(findPost)
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -27,18 +25,22 @@ console.log(findPost)
 
   return (
     <div className="App">
-      <Nav  />
+      <Nav setFindPost={setFindPost} findPost={findPost} />
       <hr />
       <Route path="/favorites">
-        <Favorites/>
+        <Favorites />
       </Route>
       <Route exact path="/">
-      <Home posts={posts} setToggleFetch={setToggleFetch} />
+        <Home
+          posts={posts}
+          findPost={findPost}
+          setToggleFetch={setToggleFetch}
+        />
       </Route>
       <Route path="/new">
-        <Form setToggleFetch={setToggleFetch}  />
+        <Form setToggleFetch={setToggleFetch} />
       </Route>
-      <Route path="/filter" component={Filter}/>
+      <Route path="/filter" component={Filter} />
     </div>
   );
 }
