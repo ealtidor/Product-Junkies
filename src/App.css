@@ -89,10 +89,14 @@ aside {
   font-size: 1.4rem;
   color: rgb(42, 134, 120);
 }
-
-.typehead-container {
-  position: relative;
+span {
+  display: "inline-block";
+  width: "1px";
+  height: "100%";
+  background: " rgb(42, 134, 120)";
+  margin: "0 2px";
 }
+
 /* Form  */
 .subheader-form {
   margin-right: 55rem;
@@ -221,37 +225,76 @@ aside {
 }
 
 /* Post */
-.home-container{
+.home-container {
   display: grid;
   grid-template-areas: "p p p";
   width: 85rem;
-
 }
-.post-container{
-margin: 2rem;
+.post-container {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  margin: 2rem;
 }
 
-.home-avatar{
+.home-avatar {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
 
-.home-username{
+.home-username {
   font-weight: bold;
 }
 
-.home-products{
+.home-products {
   width: 7rem;
   height: 7rem;
 }
 
-.home-trash{
+.home-trash {
   margin: 2rem;
   color: rgb(42, 134, 120);
 }
 
-.home-favorites{
-  margin: 2rem; 
+.home-favorites {
+  margin: 2rem;
   color: rgb(42, 134, 120);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 425px) {
+  .carousel {
+    width: 44rem;
+  }
+
+  #slider-img {
+    width: 40rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .search {
+    width: 25rem;
+    margin-left: 10rem;
+  }
+  hr {
+    width: 42rem;
+  }
+
+  .plus-sign {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+
+
 }

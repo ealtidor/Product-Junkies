@@ -64,15 +64,7 @@ function Home(props) {
             Reset
           </button>
         </aside>
-        <span
-          style={{
-            display: "inline-block",
-            width: "1px",
-            height: "100%",
-            background: " rgb(42, 134, 120)",
-            margin: "0 2px",
-          }}
-        ></span>
+        <span></span>
         <section className="home-container">
           {sortedList.map((post) => {
             const {

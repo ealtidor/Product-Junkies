@@ -13,7 +13,7 @@ const Form = (props) => {
   const [brand, setBrand] = useState("");
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
-  const [quantityLeft, setQuantityLeft] = useState(0);
+  const [quantityLeft, setQuantityLeft] = useState("");
   const history = useHistory()
 
   const handleSubmit = async (e) => {
@@ -92,10 +92,10 @@ const Form = (props) => {
       </select>
       <label className="quantity-label" htmlFor=" quantityLeft">What's Left:</label>
       <select
-        type=""
+        type="text"
         id="quantityLeft"
         value={quantityLeft}
-        onChange={(e) => setQuantityLeft(e.target.valueAsNumber)}
+        onChange={(e) => setQuantityLeft(e.target.value)}
       >
         <option value="25">25%</option>
         <option value="50">50%</option>
