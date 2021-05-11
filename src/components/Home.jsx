@@ -3,6 +3,8 @@ import { baseURL, config } from "../services";
 import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 function Home(props) {
   const [category, setCategory] = useState("");
@@ -84,14 +86,15 @@ function Home(props) {
             } = post.fields;
             return (
               <div key={post.id} className="post-container">
-                <img src={avatarImg} alt="avatar" />
-                <p>{username}</p>
-                <p>{createdTime}</p>
-                <img src={productImg} alt="products" />
-                <p>{brand}</p>
-                <p>{productName}</p>
-                <p>{quantityLeft}</p>
-                <button onClick={() => deletePost(post.id)}>REMOVE JUNK</button>
+                <img className="home-avatar" src={avatarImg} alt="avatar" />
+                <p className="home-username">{username}</p>
+                <p className="home-time">{createdTime}</p>
+                <img className="home-products" src={productImg} alt="products" />
+                <p className="home-brand">{brand}</p>
+                <p className="home-prodname">{productName}</p>
+                <p className="home-quantity">{quantityLeft}</p>
+                <button className="home-trash" onClick={() => deletePost(post.id)}><FontAwesomeIcon icon={ faTrashAlt } size="2x"/></button>
+                <button className="home-favorites"><FontAwesomeIcon icon={ faHeart} size="2x"/></button>
               </div>
             );
           })}
