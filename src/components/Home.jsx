@@ -73,7 +73,7 @@ function Home(props) {
             margin: "0 2px",
           }}
         ></span>
-        <section>
+        <section className="home-container">
           {sortedList.map((post) => {
             const {
               avatarImg,
