@@ -246,3 +246,12 @@ margin: 2rem;
   height: 7rem;
 }
 
+.home-trash{
+  margin: 2rem;
+  color: rgb(42, 134, 120);
+}
+
+.home-favorites{
+  margin: 2rem; 
+  color: rgb(42, 134, 120);
+}
