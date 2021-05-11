@@ -87,8 +87,8 @@ The purpose of this web application is to provide users with an outlet to declut
 |  Day | Deliverable | Status
 |---|---| ---|
 |May 6| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|May 7| Project Approval | Incomplete
-|May 7| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|May 7| Project Approval | Complete
+|May 7| Core Application Structure (HTML, CSS, etc.) | Complete
 |May 7| Pseudocode / actual code | Incomplete
 |May 8-10| Initial Clickable Model  | Incomplete
 |May 12| MVP | Incomplete
