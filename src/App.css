@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* Nav Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ hr {
   width: 66rem;
   justify-content: center;
 }
-
+/* Carousel Caption */
 .caption {
   text-align: left;
   font-size: 2.5rem;
@@ -46,7 +46,7 @@ hr {
   text-align: center;
   align-items: center;
 }
-
+/* Body of Main Page */
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -91,6 +91,15 @@ aside {
 .typehead-container {
   position: relative;
 }
+/* Form  */
+.subheader-form{
+  margin-right: 55rem;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+}
+
 
 .add-post {
   text-align: center;
@@ -100,3 +109,115 @@ aside {
   flex-direction: column;
   padding: 2rem;
 }
+
+.profile-label{
+  margin-right: 23rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(42, 134, 120);
+}
+ #profile{
+   margin-bottom: 2rem;
+ }
+ .avatar{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: top center;
+ }
+
+ .username-label{
+  margin-right: 23rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ #username{
+  margin-top: -4rem;
+ }
+
+ .zip-label{
+  margin-top: 2rem;
+  margin-right: 23rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ #zipCode{
+  margin-top: -4rem;
+ }
+
+ .brand-label{
+  margin-top: 2rem;
+  margin-right: 55rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ #brand{
+  margin-top: -4rem;
+  margin-right: 33rem;
+ }
+
+ .productName-label{
+ 
+  margin-top: -4rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ #productName{
+  margin-left: 28rem;
+  margin-top: -4rem;
+ }
+
+ .category-label{
+  margin-left: 59rem;
+  margin-top: -4rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+
+ }
+
+ #category{
+  margin-left: 75rem;
+  margin-top: -4rem;
+ }
+
+ .quantity-label{
+  padding: 2rem 2rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ .productImg-label{
+  padding: 2rem 2rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(42, 134, 120);
+ }
+
+ #productImg{
+   margin-bottom: 1rem;
+   width: 20rem;
+ }
+
+ .form-button{
+   margin: 2rem;
+ }
+
