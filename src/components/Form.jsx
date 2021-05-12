@@ -45,7 +45,8 @@ const Form = (props) => {
       <label className="profile-label" htmlFor="avatarImg">Profile Picture</label>
       <img className="avatar" src={profileImg} alt="avatar" />
       <input
-        type="text"
+          type="text"
+          required
         id="profile"
           placeholder="Paste Image URL"
           value={avatarImg}
@@ -53,14 +54,16 @@ const Form = (props) => {
       />
       <label className="username-label" htmlFor="username">Junkie Name</label>
       <input
-        type="text"
+          type="text"
+          required
           id="username"
           value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
       <label className="zip-label" htmlFor="zipCode">Zip Code</label>
       <input
-        type="text"
+          type="text"
+          required
           id="zipCode"
           value={zipCode}
         onChange={(e) => setZipCode(e.target.value)}
@@ -68,14 +71,16 @@ const Form = (props) => {
      
       <label className="brand-label" htmlFor="brand">Brand</label>
       <input
-        type="text"
+          type="text"
+          required
           id="brand"
           value={brand}
         onChange={(e) => setBrand(e.target.value)}
       />
       <label className="productName-label" htmlFor="productName">Product Name</label>
       <input
-        type="text"
+          type="text"
+          required
           id="productName"
           value={productName}
         onChange={(e) => setProductName(e.target.value)}
@@ -83,6 +88,7 @@ const Form = (props) => {
       <label className="category-label" htmlFor="category">Category</label>
       <select
           name="category"
+          required
           id="category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
@@ -97,19 +103,24 @@ const Form = (props) => {
       </select>
       <label className="quantity-label" htmlFor=" quantityLeft">What's Left:</label>
       <select
-        type="text"
+          type="text"
+          required
         id="quantityLeft"
         value={quantityLeft}
         onChange={(e) => setQuantityLeft(e.target.value)}
       >
-        <option value="25">25%</option>
+           <option disabled={quantityLeft} selected>
+          Pick One
+        </option>
+          <option value="25">25%</option>
         <option value="50">50%</option>
         <option value="75">75%</option>
         <option value="100">100%</option>
       </select>
       <label className="productImg-label" htmlFor="productImg">Product Image Upload</label>
       <input
-        type="text"
+          type="text"
+          required
           id="productImg"
           value={productImg}
           placeholder="Paste Product Image URL"
