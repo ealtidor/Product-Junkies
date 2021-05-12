@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faHeart, faAlignLeft} from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Nav(props) {
   

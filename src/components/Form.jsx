@@ -47,32 +47,37 @@ const Form = (props) => {
       <input
         type="text"
         id="profile"
-        placeholder="Paste Image URL"
+          placeholder="Paste Image URL"
+          value={avatarImg}
         onChange={(e) => setAvatarImg(e.target.value)}
       />
       <label className="username-label" htmlFor="username">Junkie Name</label>
       <input
         type="text"
-        id="username"
+          id="username"
+          value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
       <label className="zip-label" htmlFor="zipCode">Zip Code</label>
       <input
         type="text"
-        id="zipCode"
+          id="zipCode"
+          value={zipCode}
         onChange={(e) => setZipCode(e.target.value)}
       />
      
       <label className="brand-label" htmlFor="brand">Brand</label>
       <input
         type="text"
-        id="brand"
+          id="brand"
+          value={brand}
         onChange={(e) => setBrand(e.target.value)}
       />
       <label className="productName-label" htmlFor="productName">Product Name</label>
       <input
         type="text"
-        id="productName"
+          id="productName"
+          value={productName}
         onChange={(e) => setProductName(e.target.value)}
       />
       <label className="category-label" htmlFor="category">Category</label>
@@ -106,6 +111,7 @@ const Form = (props) => {
       <input
         type="text"
           id="productImg"
+          value={productImg}
           placeholder="Paste Product Image URL"
         onChange={(e) => setProductImg(e.target.value)}
         />
