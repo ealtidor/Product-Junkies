@@ -350,16 +350,16 @@ span {
   }
   .aside-cat {
     position: fixed;
-    bottom: 49rem;
-    right: 17rem;
+    bottom: 129rem;
+    right: 63rem;
   }
   .aside-selectcat {
     position: fixed;
-    bottom: 80rem;
-    left: -29rem;
+    height: 2rem;
+   
   }
   .reset{
-    left: 20rem;
+    left: 16rem;
     position: relative;
   }
 
