@@ -19,7 +19,7 @@
 }
 
 .search {
-  width: 50rem;
+  width: 42rem;
   padding: 10px;
   border-radius: 10px;
   color: black;
@@ -29,6 +29,7 @@
 
 .plus-sign {
   color: rgb(42, 134, 120);
+  position: relative;
 }
 
 .hamNav {
@@ -117,6 +118,7 @@ span {
 /* Form  */
 .subheader-form {
   margin-right: 55rem;
+  width: 25rem;
   padding: 2rem;
   font-size: 2rem;
   font-weight: 600;
@@ -309,8 +311,7 @@ span {
   }
 
   .search {
-    width: 45rem;
-    margin-left: 3rem;
+    width: 38rem;
     margin-top: 4rem;
   }
   hr {
@@ -323,9 +324,6 @@ span {
     display: none;
   }
 
-  /* aside {
-    display: none;
-  } */
   .carousel.slide {
     width: 80rem;
   }
@@ -339,5 +337,39 @@ span {
     margin-left: -29rem;
     margin-top: 4rem;
     display: block;
+  }
+  .add-post {
+    margin: 0rem 3rem 0rem 3rem;
+    width: 74rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .aside-junk {
+    display: none;
+  }
+  .aside-cat {
+    position: relative;
+    bottom: 49rem;
+    right: 17rem;
+  }
+  .aside-selectcat {
+    position: relative;
+    left: 19rem;
+  }
+  .reset{
+    left: 20rem;
+    position: relative;
+  }
+
+  .aside-filter {
+    position: relative;
+    left: 8rem;
+    bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    display: inline-block;
   }
 }

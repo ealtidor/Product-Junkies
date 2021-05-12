@@ -53,6 +53,7 @@ function Home(props) {
 
           <div className="aside-cat">
             <select
+              className="aside-selectcat"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
@@ -63,7 +64,8 @@ function Home(props) {
                 return <option value={category}>{category}</option>;
               })}
             </select>
-            <button type="button" onClick={() => setCategory("")}>
+            <button className="reset"
+              type="button" onClick={() => setCategory("")}>
               Reset
             </button>
           </div>
@@ -92,6 +94,7 @@ function Home(props) {
                 />
                 <p className="home-brand">{brand}</p>
                 <p className="home-prodname">{productName}</p>
+                <p>What's Left:</p>
                 <p className="home-quantity">{quantityLeft}</p>
                 <button
                   className="home-trash"
