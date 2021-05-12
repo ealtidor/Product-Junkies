@@ -262,7 +262,11 @@ span {
 }
 
 /* Responsiveness */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
+  .App{
+    width: 84rem;
+  }
+
   .carousel {
     width: 44rem;
   }
@@ -277,10 +281,12 @@ span {
 
   .search {
     width: 25rem;
-    margin-left: 10rem;
+    margin-right: 22rem;
   }
   hr {
-    width: 42rem;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
   }
 
   .plus-sign {
@@ -294,7 +300,9 @@ span {
   aside {
     display: none;
   }
-
+.carousel.slide{
+  width: 80rem;
+}
 
 
 }
