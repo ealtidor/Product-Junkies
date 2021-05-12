@@ -53,8 +53,8 @@ function Home(props) {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option disabled={category} selected>
-              ---
+            <option className="dropdown-header" disabled={category} selected>
+              SHOP BY CATEGORY
             </option>
             {categories.map((category) => {
               return <option value={category}>{category}</option>;

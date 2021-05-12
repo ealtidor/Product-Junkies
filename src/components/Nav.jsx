@@ -9,9 +9,6 @@ function Nav(props) {
       <Link className="header" to="/">
         Product JunkEz
       </Link>
-      <Link className="hamNav">
-        <FontAwesomeIcon icon={faAlignLeft} size="2x" />
-      </Link>
 
       <input
         className="search"

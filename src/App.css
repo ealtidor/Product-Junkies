@@ -59,6 +59,7 @@ hr {
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 550px 550px 550px
 }
 
 .sub-header {
@@ -103,6 +104,11 @@ span {
   height: 100%;
   background: rgb(42, 134, 120);
   margin: 0 2px;
+}
+
+.home-container{
+  grid-column: 2/span 4;
+  grid-row: 1/span 3;
 }
 
 /* Form  */
@@ -209,19 +215,22 @@ span {
   margin-top: -4rem;
 }
 
-.quantity-label {
+.quantity-label,
+.productImg-label,
+.dropdown-header
+ {
   padding: 2rem 2rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(42, 134, 120);
 }
 
-.productImg-label {
+/* .productImg-label {
   padding: 2rem 2rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(42, 134, 120);
-}
+} */
 
 #productImg {
   margin-bottom: 1rem;
@@ -231,6 +240,8 @@ span {
 .form-button {
   margin: 2rem;
 }
+
+.dropdown-header
 
 /* Post */
 .home-container {
@@ -242,6 +253,8 @@ span {
   border: 1px solid lightgray;
   padding: 1rem;
   margin: 2rem;
+  width: 18rem;
+  display: inline-block
 }
 
 .home-avatar {
@@ -308,9 +321,9 @@ span {
     display: none;
   }
 
-  aside {
+  /* aside {
     display: none;
-  }
+  } */
 .carousel.slide{
   width: 80rem;
 }
