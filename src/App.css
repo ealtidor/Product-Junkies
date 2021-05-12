@@ -8,6 +8,7 @@
   justify-content: space-between;
   margin: 2rem 3rem;
   align-items: center;
+  padding: 1rem;
 }
 
 .header {
@@ -29,6 +30,13 @@
 .plus-sign {
   color: rgb(42, 134, 120);
 }
+
+.hamNav{
+  color: rgb(42, 134, 120);
+  display: none;
+
+}
+
 hr {
   margin: 1rem 2rem 1rem 2rem;
 }
@@ -90,11 +98,11 @@ aside {
   color: rgb(42, 134, 120);
 }
 span {
-  display: "inline-block";
-  width: "1px";
-  height: "100%";
-  background: " rgb(42, 134, 120)";
-  margin: "0 2px";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: rgb(42, 134, 120);
+  margin: 0 2px;
 }
 
 /* Form  */
@@ -276,21 +284,24 @@ span {
   }
 
   .header {
-    font-size: 2rem;
+    font-size: 3rem;
+    align-content: flex-start;
+    margin-bottom: 3rem;
   }
 
+.plus-sign{
+  margin-bottom: 3rem;
+}
+
   .search {
-    width: 25rem;
-    margin-right: 22rem;
+    width: 45rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
   }
   hr {
     width: 80rem;
     display: flex;
     justify-content: center;
-  }
-
-  .plus-sign {
-    display: none;
   }
 
   span {
@@ -304,5 +315,15 @@ span {
   width: 80rem;
 }
 
+.navbar {
+  padding: 1rem;
+  height: 8rem;
+}
+
+.hamNav{
+  margin-left: -29rem;
+  margin-top: 4rem;
+  display: block;
+}
 
 }

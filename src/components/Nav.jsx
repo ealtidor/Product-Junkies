@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faHeart, faAlignLeft} from "@fortawesome/free-solid-svg-icons";
 
 function Nav(props) {
+  
   return (
     <nav className="navbar">
       <Link className="header" to="/">
         Product JunkEz
+      </Link>
+      <Link className="hamNav">
+        <FontAwesomeIcon icon={faAlignLeft} size="2x" />
       </Link>
 
       <input
@@ -18,7 +22,8 @@ function Nav(props) {
         id="search-product"
         placeholder="SEARCH JUNK DRAWER"
       />
-
+      
+    
       <Link className="plus-sign" to="/favorites">
         <FontAwesomeIcon icon={faHeart} size="2x" />
       </Link>

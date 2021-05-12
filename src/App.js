@@ -26,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <Nav setFindPost={setFindPost} findPost={findPost} />
+
       <hr />
       <Route path="/favorites">
         <Favorites />
