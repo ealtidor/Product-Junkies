@@ -349,13 +349,14 @@ span {
     display: none;
   }
   .aside-cat {
-    position: relative;
+    position: fixed;
     bottom: 49rem;
     right: 17rem;
   }
   .aside-selectcat {
-    position: relative;
-    left: 19rem;
+    position: fixed;
+    bottom: 80rem;
+    left: -29rem;
   }
   .reset{
     left: 20rem;
