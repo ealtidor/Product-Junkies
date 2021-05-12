@@ -4,6 +4,8 @@
 
 Product Junkies
 
+https://admiring-haibt-ba63a0.netlify.app
+
 ## Project Description
 
 The purpose of this web application is to provide users with an outlet to declutter their product drawers. Users will post products that they purchasesd but for some reason no longer use, and will allow anyone who comes to the site the ability to claim the item. Ultimately, providing users the ability to declutter their space, while giving other users a chance to try new products for free! Similar to Facebook Marketplace and Craigslist, users will interact via messages or the agreed upon method of communication to finalize the exchange.
@@ -91,7 +93,7 @@ The purpose of this web application is to provide users with an outlet to declut
 |May 7| Core Application Structure (HTML, CSS, etc.) | Complete
 |May 7| Pseudocode / actual code | Incomplete
 |May 8-10| Initial Clickable Model  | Complete
-|May 12| MVP | Incomplete
+|May 12| MVP | Complete
 |May 12-13| CSS Styling | Incomplete
 |May 14| Presentations | Incomplete
 
@@ -120,10 +122,10 @@ The purpose of this web application is to provide users with an outlet to declut
 ## SWOT Analysis
 
 ### Strengths:
-I have a clear vision of what I want my application to look like, and I've usesd a few of the features in past projects so I have something to reference for the majority of components involved.
+I have a clear vision of what I want my application to look like, and I've used a few of the features in past projects so I have something to reference for the majority of components involved.
 ### Weaknesses:
-Properly executing methods in functional and class components is still an opportunity area. In addition, using the apporpriate styling elements to have the application mirror the wireframes.
+Properly executing methods in functional and class components is still an opportunity area. In addition, using the appropriate styling elements to have the application mirror the wireframes.
 ### Opportunities:
-I'll be able to reinforce all of the concepts learned in unit 2. To add to that, I can famailirize myself with tools such as bootstrap and other UI tools to assist with the design.
+I'll be able to reinforce all of the concepts learned in unit 2. To add to that, I can familiarize myself with tools such as bootstrap and other UI tools to assist with the design.
 ### Threats:
-Project scope may take more time to complete than estimated, which could place me at risk at not having MVP done in time. Furthermore, when encoutering an issue, I would need to reach out to support resources to prevent being stuck on an issue for over an hour.
+Project scope may take more time to complete than estimated, which could place me at risk at not having MVP done in time. Furthermore, when encountering an issue, I would need to reach out to support resources to prevent being stuck on an issue for over an hour.
