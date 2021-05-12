@@ -14,6 +14,13 @@ function App() {
   const [findPost, setFindPost] = useState("");
   const [posts, setPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
+  const [postFavorites, setPostFavorites] = useState([]);
+
+  const addToFavorites = (post) => {
+    const favList = [...postFavorites, post];
+    setPostFavorites(favList)
+  }
+
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -29,13 +36,15 @@ function App() {
 
       <hr />
       <Route path="/favorites">
-        <Favorites />
+        <Favorites postFavorites={postFavorites} />
       </Route>
       <Route exact path="/">
         <Home
           posts={posts}
           findPost={findPost}
           setToggleFetch={setToggleFetch}
+          addToFavorites={addToFavorites}
+          postFavorites={postFavorites}
         />
       </Route>
       <Route path="/new">

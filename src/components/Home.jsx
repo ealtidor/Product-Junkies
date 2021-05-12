@@ -102,8 +102,9 @@ function Home(props) {
                 >
                   <FontAwesomeIcon icon={faTrashAlt} size="2x" />
                 </button>
-                <button className="home-favorites">
+                <button onClick={() => props.addToFavorites(post)} className="home-favorites">
                   <FontAwesomeIcon icon={faHeart} size="2x" />
+                  {props.postFavorites && !props.postFavorites.find((f) => f.id === post.id) ? 'yep' : 'nop'} 
                 </button>
               </div>
             );
