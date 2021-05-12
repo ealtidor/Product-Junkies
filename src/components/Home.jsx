@@ -3,8 +3,8 @@ import { baseURL, config } from "../services";
 import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Home(props) {
   const [category, setCategory] = useState("");
@@ -27,42 +27,46 @@ function Home(props) {
     post.fields.category.includes(category)
   );
 
-  const searchBar =  posts.filter((post) =>
-  post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
-);
-  console.log("find", searchBar)
-  console.log("find", props.findPost.toLowerCase())
+  const searchBar = posts.filter((post) =>
+    post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
+  );
+  console.log("find", searchBar);
+  console.log("find", props.findPost.toLowerCase());
 
-  const sortedList=props.findPost ? searchBar : filteredPosts
+  const sortedList = props.findPost ? searchBar : filteredPosts;
   return (
     <div>
       <ImageSlider />
       <h3 className="sub-header"> Today's Pick</h3>
       <main>
         <aside>
-          <Link className="aside-junk" to="/new">
-            + POST YOUR JUNK
-          </Link>
-          <Link className="aside-filter" to="/filter">
-            FILTERS
-          </Link>
-          <label className="aside-cat" htmlFor="category">
-            SHOP BY CATEGORY
-          </label>
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-          >
-            <option className="dropdown-header" disabled={category} selected>
-              SHOP BY CATEGORY
-            </option>
-            {categories.map((category) => {
-              return <option value={category}>{category}</option>;
-            })}
-          </select>
-          <button type="button" onClick={() => setCategory("")}>
-            Reset
-          </button>
+          <div className="aside-junk">
+            <Link className="aside-junk" to="/new">
+              + POST YOUR JUNK
+            </Link>
+          </div>
+          <div className="aside-filter">
+            <Link className="aside-filter" to="/filter">
+              FILTERS
+            </Link>
+          </div>
+
+          <div className="aside-cat">
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option className="dropdown-header" disabled={category} selected>
+                SHOP BY CATEGORY
+              </option>
+              {categories.map((category) => {
+                return <option value={category}>{category}</option>;
+              })}
+            </select>
+            <button type="button" onClick={() => setCategory("")}>
+              Reset
+            </button>
+          </div>
         </aside>
         <span></span>
         <section className="home-container">
@@ -81,12 +85,23 @@ function Home(props) {
                 <img className="home-avatar" src={avatarImg} alt="avatar" />
                 <p className="home-username">{username}</p>
                 <p className="home-time">{createdTime}</p>
-                <img className="home-products" src={productImg} alt="products" />
+                <img
+                  className="home-products"
+                  src={productImg}
+                  alt="products"
+                />
                 <p className="home-brand">{brand}</p>
                 <p className="home-prodname">{productName}</p>
                 <p className="home-quantity">{quantityLeft}</p>
-                <button className="home-trash" onClick={() => deletePost(post.id)}><FontAwesomeIcon icon={ faTrashAlt } size="2x"/></button>
-                <button className="home-favorites"><FontAwesomeIcon icon={ faHeart} size="2x"/></button>
+                <button
+                  className="home-trash"
+                  onClick={() => deletePost(post.id)}
+                >
+                  <FontAwesomeIcon icon={faTrashAlt} size="2x" />
+                </button>
+                <button className="home-favorites">
+                  <FontAwesomeIcon icon={faHeart} size="2x" />
+                </button>
               </div>
             );
           })}

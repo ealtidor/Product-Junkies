@@ -31,10 +31,9 @@
   color: rgb(42, 134, 120);
 }
 
-.hamNav{
+.hamNav {
   color: rgb(42, 134, 120);
   display: none;
-
 }
 
 hr {
@@ -59,7 +58,7 @@ hr {
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 550px 550px 550px
+  grid-template-rows: 550px 550px 550px;
 }
 
 .sub-header {
@@ -70,11 +69,9 @@ main {
 }
 
 aside {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  height: 20rem;
-  width: 22rem;
-  padding: 1rem;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+  border-right: 1px solid rgb(42, 134, 120);
 }
 
 .aside-junk {
@@ -82,6 +79,8 @@ aside {
   font-weight: 800;
   font-size: 1.4rem;
   color: rgb(42, 134, 120);
+  margin: 2rem;
+  width: 20rem;
 }
 
 .aside-filter {
@@ -91,12 +90,16 @@ aside {
   font-weight: 800;
   font-size: 1.4rem;
   color: rgb(42, 134, 120);
+  margin: 2rem;
+  width: 20rem;
 }
 .aside-cat {
   grid-row: 3 / span 1;
   font-weight: 800;
   font-size: 1.4rem;
   color: rgb(42, 134, 120);
+  margin: 2rem;
+  width: 20rem;
 }
 span {
   display: inline-block;
@@ -106,9 +109,9 @@ span {
   margin: 0 2px;
 }
 
-.home-container{
-  grid-column: 2/span 4;
-  grid-row: 1/span 3;
+.home-container {
+  grid-column: 2 / span 4;
+  grid-row: 1 / span 3;
 }
 
 /* Form  */
@@ -217,8 +220,7 @@ span {
 
 .quantity-label,
 .productImg-label,
-.dropdown-header
- {
+.dropdown-header {
   padding: 2rem 2rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -254,7 +256,7 @@ span {
   padding: 1rem;
   margin: 2rem;
   width: 18rem;
-  display: inline-block
+  display: inline-block;
 }
 
 .home-avatar {
@@ -284,7 +286,7 @@ span {
 
 /* Responsiveness */
 @media only screen and (max-width: 768px) {
-  .App{
+  .App {
     width: 84rem;
   }
 
@@ -302,9 +304,9 @@ span {
     margin-bottom: 3rem;
   }
 
-.plus-sign{
-  margin-bottom: 3rem;
-}
+  .plus-sign {
+    margin-bottom: 3rem;
+  }
 
   .search {
     width: 45rem;
@@ -324,19 +326,18 @@ span {
   /* aside {
     display: none;
   } */
-.carousel.slide{
-  width: 80rem;
-}
+  .carousel.slide {
+    width: 80rem;
+  }
 
-.navbar {
-  padding: 1rem;
-  height: 8rem;
-}
+  .navbar {
+    padding: 1rem;
+    height: 8rem;
+  }
 
-.hamNav{
-  margin-left: -29rem;
-  margin-top: 4rem;
-  display: block;
-}
-
+  .hamNav {
+    margin-left: -29rem;
+    margin-top: 4rem;
+    display: block;
+  }
 }
