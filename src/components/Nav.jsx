@@ -19,7 +19,6 @@ function Nav(props) {
         id="search-product"
         placeholder="SEARCH JUNK DRAWER"
       />
-      <pre className="fav-total">{JSON.stringify(props.postFavorites.length)}</pre>
       <Link className="plus-sign" to="/favorites">
         <FontAwesomeIcon icon={faHeart} size="2x" />
       </Link>
