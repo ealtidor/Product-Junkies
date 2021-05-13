@@ -6,7 +6,7 @@ const Favorites = (props) => {
   
   return (
     <div>
-      <h3>FAVORITES COMING SOON</h3>
+      <h3>YOUR FAVORITES</h3>
       <section className="home-container">
           {props.postFavorites.map((post) => {
             const {
