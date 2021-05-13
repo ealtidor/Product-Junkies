@@ -46,11 +46,6 @@ function Home(props) {
               + POST YOUR JUNK
             </Link>
           </div>
-          <div className="aside-filter">
-            <Link className="aside-filter" to="/filter">
-              FILTERS
-            </Link>
-          </div>
 
           <div className="aside-cat">
             <select

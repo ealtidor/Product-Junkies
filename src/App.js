@@ -57,7 +57,6 @@ function App() {
       <Route path="/new">
         <Form setToggleFetch={setToggleFetch} />
       </Route>
-      <Route path="/filter" component={Filter} />
     </div>
   );
 }
