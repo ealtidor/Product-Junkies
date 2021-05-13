@@ -16,11 +16,20 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [postFavorites, setPostFavorites] = useState([]);
 
-  const addToFavorites = (post) => {
-    const favList = [...postFavorites, post];
-    setPostFavorites(favList)
-  }
+  // Favorites function
 
+  const addToFavorites = (post) => {
+    const hasBeenLiked = postFavorites.find((f) => f.id === post.id);
+    let favList;
+    if (!hasBeenLiked) {
+      favList = [...postFavorites, post];
+      setPostFavorites(favList);
+    } else {
+      const index = postFavorites.findIndex((f) => f.id === post.id);
+      favList = postFavorites.splice(index, 0);
+      setPostFavorites(favList)
+    }
+  };
 
   useEffect(() => {
     const fetchPosts = async () => {

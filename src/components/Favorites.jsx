@@ -38,9 +38,7 @@ const Favorites = (props) => {
                 >
                   <FontAwesomeIcon icon={faTrashAlt} size="2x" />
                 </button>
-                <button onClick={() => props.addToFavorites(post)} className="home-favorites">
-                  <FontAwesomeIcon icon={faHeart} size="2x" />
-                </button>
+               
               </div>
             );
           })}

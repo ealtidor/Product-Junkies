@@ -30,8 +30,7 @@ function Home(props) {
   const searchBar = posts.filter((post) =>
     post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
   );
-  console.log("find", searchBar);
-  console.log("find", props.findPost.toLowerCase());
+  
 
   const sortedList = props.findPost ? searchBar : filteredPosts;
   return (
@@ -64,8 +63,11 @@ function Home(props) {
                 return <option value={category}>{category}</option>;
               })}
             </select>
-            <button className="reset"
-              type="button" onClick={() => setCategory("")}>
+            <button
+              className="reset"
+              type="button"
+              onClick={() => setCategory("")}
+            >
               Reset
             </button>
           </div>
@@ -102,9 +104,25 @@ function Home(props) {
                 >
                   <FontAwesomeIcon icon={faTrashAlt} size="2x" />
                 </button>
-                <button onClick={() => props.addToFavorites(post)} className="home-favorites">
-                  <FontAwesomeIcon icon={faHeart} size="2x" />
-                  {props.postFavorites && !props.postFavorites.find((f) => f.id === post.id) ? 'yep' : 'nop'} 
+                <button
+                  onClick={() => props.addToFavorites(post)}
+                  className="home-favorites"
+                >
+            
+                  {props.postFavorites &&
+                  !props.postFavorites.find((f) => f.id === post.id) ? (
+                    <FontAwesomeIcon
+                      icon={faHeart}
+                      size="2x"
+                      style={{ color: "rgb(42, 134, 120)" }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      icon={faHeart}
+                      size="2x"
+                      style={{ color: "red" }}
+                    />
+                  )}
                 </button>
               </div>
             );
