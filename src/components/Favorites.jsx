@@ -34,7 +34,7 @@ const Favorites = (props) => {
                 <p className="home-quantity">{quantityLeft}</p>
                 <button
                   className="home-trash"
-                  // onClick={() => deletePost(post.id)}
+                
                 >
                   <FontAwesomeIcon icon={faTrashAlt} size="2x" />
                 </button>

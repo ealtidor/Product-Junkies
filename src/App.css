@@ -229,13 +229,6 @@ span {
   color: rgb(42, 134, 120);
 }
 
-/* .productImg-label {
-  padding: 2rem 2rem 0rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(42, 134, 120);
-} */
-
 #productImg {
   margin-bottom: 1rem;
   width: 20rem;
@@ -284,6 +277,10 @@ span {
 .home-favorites {
   margin: 2rem;
  
+}
+
+.home-quantity{
+  color: rgb(42, 134, 120);
 }
 
 /* Responsiveness */

@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ProgressBar } from "react-bootstrap";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import ImageSlider from "./ImageSlider";
@@ -84,6 +86,12 @@ function Home(props) {
               productName,
               quantityLeft,
             } = post.fields;
+
+            // Progress Bar
+            const now = Number(quantityLeft);
+            const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
+
+
             return (
               <div key={post.id} className="post-container">
                 <img className="home-avatar" src={avatarImg} alt="avatar" />
@@ -97,7 +105,7 @@ function Home(props) {
                 <p className="home-brand">{brand}</p>
                 <p className="home-prodname">{productName}</p>
                 <p>What's Left:</p>
-                <p className="home-quantity">{quantityLeft}</p>
+                <p className="home-quantity">{progressInstance}</p>
                 <button
                   className="home-trash"
                   onClick={() => deletePost(post.id)}
