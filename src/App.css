@@ -27,7 +27,7 @@
   opacity: 80%;
 }
 
-.fav-total{
+.fav-total {
   color: rgb(42, 134, 120);
   position: relative;
   font-size: 1rem;
@@ -37,7 +37,7 @@
   top: 1rem;
 }
 
-.fav-subheader{
+.fav-subheader {
   color: rgb(42, 134, 120);
 }
 
@@ -168,7 +168,11 @@ span {
   background-position: top center;
 }
 
-.username-label {
+.username-label,
+.brand-label,
+.productName-label,
+.category-label,
+.quantity-label{
   margin-right: 23rem;
   padding: 2rem;
   font-size: 1.2rem;
@@ -180,63 +184,26 @@ span {
   margin-top: -4rem;
 }
 
-.zip-label {
-  margin-top: 2rem;
-  margin-right: 23rem;
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(42, 134, 120);
-}
-
-#zipCode {
-  margin-top: -4rem;
-}
-
-.brand-label {
-  margin-top: 2rem;
-  margin-right: 55rem;
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(42, 134, 120);
-}
-
 #brand {
   margin-top: -4rem;
-  margin-right: 33rem;
 }
 
-.productName-label {
-  margin-top: -4rem;
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(42, 134, 120);
-}
+
 
 #productName {
-  margin-left: 28rem;
   margin-top: -4rem;
 }
 
-.category-label {
-  margin-left: 59rem;
+
+#category, 
+#quantityLeft{
   margin-top: -4rem;
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(42, 134, 120);
+  width: 11rem;
 }
 
-#category {
-  margin-left: 75rem;
-  margin-top: -4rem;
-}
 
-.quantity-label,
-.productImg-label,
-.dropdown-header {
+.dropdown-header,
+.productImg-label {
   padding: 2rem 2rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -290,12 +257,11 @@ span {
 
 .home-favorites {
   margin: 2rem;
- 
 }
 
-.progress-bar{
+.progress-bar {
   background-color: rgb(42, 134, 120);
-  font-weight: bold
+  font-weight: bold;
 }
 
 /* Responsiveness */
@@ -368,9 +334,8 @@ span {
   .aside-selectcat {
     position: absolute;
     height: 2rem;
-   
   }
-  .reset{
+  .reset {
     left: 16rem;
     position: relative;
   }
