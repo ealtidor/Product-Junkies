@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav setFindPost={setFindPost} findPost={findPost} />
+      <Nav setFindPost={setFindPost} findPost={findPost} postFavorites={postFavorites} />
 
       <hr />
       <Route path="/favorites">

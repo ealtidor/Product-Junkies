@@ -38,7 +38,7 @@ function Home(props) {
     <div>
       <ImageSlider />
       <h3 className="sub-header"> Today's Pick</h3>
-      <pre>{JSON.stringify(props.postFavorites.length)}</pre>
+
       <main>
         <aside>
           <div className="aside-junk">
