@@ -328,23 +328,17 @@ span {
   }
   .aside-cat {
     position: absolute;
-    bottom: 129rem;
-    right: 63rem;
+    bottom: 44rem;
   }
   .aside-selectcat {
-    position: absolute;
+    position: relative;
     height: 2rem;
+    top: 6rem;
   }
   .reset {
-    left: 16rem;
     position: relative;
-  }
-
-  .aside-filter {
-    position: relative;
-    left: 8rem;
-    bottom: 2rem;
-    font-size: 0.9rem;
+    top:6rem;
+    left: 1rem;
   }
 
   main {
