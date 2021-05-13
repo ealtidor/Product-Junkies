@@ -23,12 +23,10 @@ function App() {
     let favList;
     if (!hasBeenLiked) {
       favList = [...postFavorites, post];
-      setPostFavorites(favList);
     } else {
-      const index = postFavorites.findIndex((f) => f.id === post.id);
-      favList = postFavorites.splice(index, 0);
-      setPostFavorites(favList)
+      favList = postFavorites.filter((f) => f.id !== post.id)
     }
+    setPostFavorites(favList);
   };
 
   useEffect(() => {

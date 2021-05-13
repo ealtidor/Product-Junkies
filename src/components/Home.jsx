@@ -32,13 +32,13 @@ function Home(props) {
   const searchBar = posts.filter((post) =>
     post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
   );
-  
 
   const sortedList = props.findPost ? searchBar : filteredPosts;
   return (
     <div>
       <ImageSlider />
       <h3 className="sub-header"> Today's Pick</h3>
+      <pre>{JSON.stringify(props.postFavorites.length)}</pre>
       <main>
         <aside>
           <div className="aside-junk">
@@ -89,8 +89,9 @@ function Home(props) {
 
             // Progress Bar
             const now = Number(quantityLeft);
-            const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
-
+            const progressInstance = (
+              <ProgressBar now={now} label={`${now}%`} />
+            );
 
             return (
               <div key={post.id} className="post-container">
@@ -116,7 +117,6 @@ function Home(props) {
                   onClick={() => props.addToFavorites(post)}
                   className="home-favorites"
                 >
-            
                   {props.postFavorites &&
                   !props.postFavorites.find((f) => f.id === post.id) ? (
                     <FontAwesomeIcon

@@ -1,9 +1,13 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ProgressBar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import {  faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 const Favorites = (props) => {
   
+ 
+
   return (
     <div>
       <h3>YOUR FAVORITES</h3>
@@ -18,6 +22,11 @@ const Favorites = (props) => {
               productName,
               quantityLeft,
             } = post.fields;
+            
+            const now = Number(quantityLeft);
+            const progressInstance = (
+              <ProgressBar now={now} label={`${now}%`} />
+            );
             return (
               <div key={post.id} className="post-container">
                 <img className="home-avatar" src={avatarImg} alt="avatar" />
@@ -31,7 +40,7 @@ const Favorites = (props) => {
                 <p className="home-brand">{brand}</p>
                 <p className="home-prodname">{productName}</p>
                 <p>What's Left:</p>
-                <p className="home-quantity">{quantityLeft}</p>
+                <p className="home-quantity">{progressInstance}</p>
                 <button
                   className="home-trash"
                 
