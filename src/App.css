@@ -279,8 +279,9 @@ span {
  
 }
 
-.home-quantity{
-  color: rgb(42, 134, 120);
+.progress-bar{
+  background-color: rgb(42, 134, 120);
+  font-weight: bold
 }
 
 /* Responsiveness */
@@ -346,12 +347,12 @@ span {
     display: none;
   }
   .aside-cat {
-    position: fixed;
+    position: absolute;
     bottom: 129rem;
     right: 63rem;
   }
   .aside-selectcat {
-    position: fixed;
+    position: absolute;
     height: 2rem;
    
   }
