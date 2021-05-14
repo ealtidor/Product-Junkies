@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Nav(props) {
-  
   return (
     <nav className="navbar">
       <Link className="header" to="/">

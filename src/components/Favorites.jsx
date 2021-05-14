@@ -19,7 +19,7 @@ const Favorites = (props) => {
             productName,
             quantityLeft,
           } = post.fields;
-// Progress Bar Functionality
+          // Progress Bar Functionality
           const now = Number(quantityLeft);
           const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
           return (
