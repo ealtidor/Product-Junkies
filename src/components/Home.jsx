@@ -133,6 +133,9 @@ function Home(props) {
           ;
         </section>
       </main>
+      <footer>
+        <p> © Product JunkEz | Emanuella Altidor, 2021</p>
+      </footer>
     </div>
   );
 }

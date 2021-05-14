@@ -3,17 +3,7 @@
   margin: 2rem;
 }
 
-footer{
-  background-color:rgb(42, 134, 120);
-  height: 1rem;
-  padding: .5rem;
-}
-p {
-  color: white;
-  padding: 0.5rem;
-  width: 100%;
-  text-align: left;
-}
+
 /* Nav Bar */
 .navbar {
   display: flex;
