@@ -6,7 +6,6 @@ import axios from "axios";
 import { baseURL, config } from "./services";
 import "./App.css";
 import Favorites from "./components/Favorites";
-import Filter from "./components/Filter";
 import { useState, useEffect } from "react";
 
 // Get Request

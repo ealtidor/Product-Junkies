@@ -172,7 +172,7 @@ span {
 .brand-label,
 .productName-label,
 .category-label,
-.quantity-label{
+.quantity-label {
   margin-right: 23rem;
   padding: 2rem;
   font-size: 1.2rem;
@@ -188,19 +188,15 @@ span {
   margin-top: -4rem;
 }
 
-
-
 #productName {
   margin-top: -4rem;
 }
 
-
-#category, 
-#quantityLeft{
+#category,
+#quantityLeft {
   margin-top: -4rem;
   width: 11rem;
 }
-
 
 .dropdown-header,
 .productImg-label {
@@ -337,7 +333,7 @@ span {
   }
   .reset {
     position: relative;
-    top:6rem;
+    top: 6rem;
     left: 1rem;
   }
 

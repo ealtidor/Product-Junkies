@@ -27,6 +27,7 @@ const Form = (props) => {
       quantityLeft,
     };
 
+    // Post Request
     await axios.post(baseURL, { fields: newPost }, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/");
