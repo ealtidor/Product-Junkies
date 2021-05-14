@@ -23,7 +23,7 @@ function App() {
     if (!hasBeenLiked) {
       favList = [...postFavorites, post];
     } else {
-      favList = postFavorites.filter((f) => f.id !== post.id)
+      favList = postFavorites.filter((f) => f.id !== post.id);
     }
     setPostFavorites(favList);
   };
@@ -38,7 +38,11 @@ function App() {
 
   return (
     <div className="App">
-      <Nav setFindPost={setFindPost} findPost={findPost} postFavorites={postFavorites} />
+      <Nav
+        setFindPost={setFindPost}
+        findPost={findPost}
+        postFavorites={postFavorites}
+      />
 
       <hr />
       <Route path="/favorites">
@@ -57,8 +61,8 @@ function App() {
         <Form setToggleFetch={setToggleFetch} />
       </Route>
       <footer>
-       <p> © Product JunkEz | Emanuella Altidor, 2021</p>
-        </footer>
+        <p> © Product JunkEz | Emanuella Altidor, 2021</p>
+      </footer>
     </div>
   );
 }

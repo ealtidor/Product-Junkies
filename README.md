@@ -104,28 +104,26 @@ The purpose of this web application is to provide users with an outlet to declut
 | Proposal| H | 3hrs| 4hrs | 4hrs |
 | Airtable Setup | H | .5hrs| .5hrs | .5hrs |
 | Pseudocode | H | 2hrs| 2hrs | 2hrs |
-| Navigation and clickable icons| H | 3hrs| 7hrs | 7hrs |
-| Data population| H | 3hrs| 7hrs | 7hrs |
-| Create form for products| H | 3hrs| 7hrs | 7hrs |
-| Create product cards| H | 3hrs| 7hrs | 7hrs |
-| Create search bar| H | 3hrs| 7hrs | 7hrs |
-| Create category dropdowns| H | 1hrs| 1hrs | 1hrs |
-| Webpage responsiveness | H | 1hrs| 0.5hrs | 0.5hrs |
-| Create filter function | M | 3hrs| 7hrs | 7hrs |
+| Navigation and clickable icons| H | 3hrs| 5hrs | 5hrs |
+| Data population| H | 3hrs| 3hrs | 3hrs |
+| Create form for products| H | 3hrs| 5hrs | 5hrs |
+| Create product cards| H | 3hrs| 3hrs | 3hrs |
+| Create search bar| H | 3hrs| 2hrs | 2hrs |
+| Create category dropdowns| H | 1hrs| 2hrs | 2hrs |
+| Webpage responsiveness | H | 1hrs| 3hrs | 3hrs |
 | CSS Styling | H | 3hrs| 6hrs | 6hrs |
 | Create favorite list | L | 2hrs| 6hrs | 6hrs |
-| Create product details link to Amazon| L | 2hrs| 1hrs | 1hrs |
-| Data edit and deletion | M| 2hrs| 1hrs | 1hrs |
-| Review of Functionality | H | 2hrs| 1hrs | 1hrs |
+| Data edit and deletion | M| 2hrs| 3hrs | 3hrs |
+| Review of Functionality | H | 2hrs| 2hrs | 2hrs |
 | Presentation Run Through | H | 1hrs| 1hrs | 1hrs |
-| Total | H | 38.5hrs| 36.5hrs | 36.5hrs |
+| Total | H | 38.5hrs| 47.5hrs | 47.5hrs |
 ## SWOT Analysis
 
 ### Strengths:
-I have a clear vision of what I want my application to look like, and I've used a few of the features in past projects so I have something to reference for the majority of components involved.
+I had a clear vision of what I wanted my application to look like, and I've used a few of the features from past projects so I have something to reference for the majority of components involved.
 ### Weaknesses:
 Properly executing methods in functional and class components is still an opportunity area. In addition, using the appropriate styling elements to have the application mirror the wireframes.
 ### Opportunities:
-I'll be able to reinforce all of the concepts learned in unit 2. To add to that, I can familiarize myself with tools such as bootstrap and other UI tools to assist with the design.
+To reinforce all of the concepts learned in unit 2. To add to that, I can familiarize myself further with tools such as bootstrap and other Material UI tools to assist with the design.
 ### Threats:
-Project scope may take more time to complete than estimated, which could place me at risk at not having MVP done in time. Furthermore, when encountering an issue, I would need to reach out to support resources to prevent being stuck on an issue for over an hour.
+Project styling  took more time to complete than estimated, which could placed me at risk at not having MVP done in time. Furthermore, when encountering an issue, I would need to reach out to support resources to prevent being stuck on an issue for over an hour, but these resources are shared so I have to wait for them to become available.
