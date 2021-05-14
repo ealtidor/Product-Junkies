@@ -56,6 +56,9 @@ function App() {
       <Route path="/new">
         <Form setToggleFetch={setToggleFetch} />
       </Route>
+      <footer>
+       <p> © Product JunkEz | Emanuella Altidor, 2021</p>
+        </footer>
     </div>
   );
 }
