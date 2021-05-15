@@ -115,7 +115,7 @@ const Form = (props) => {
           value={quantityLeft}
           onChange={(e) => setQuantityLeft(e.target.value)}
         >
-          <option disabled={quantityLeft} selected>
+          <option disabled={quantityLeft} defaultValue="Pick One">
             Pick One
           </option>
           <option value="25">25%</option>
