@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +10,40 @@ function Nav(props) {
       <Link className="header" to="/">
         Product JunkEz
       </Link>
-
+      <>
+  <Navbar bg="light">
+    <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+  </Navbar>
+  <br />
+  <Navbar bg="light">
+    <Navbar.Brand>Brand text</Navbar.Brand>
+  </Navbar>
+  <br />
+  <Navbar bg="dark">
+    <Navbar.Brand href="#home">
+      <img
+        src="/logo.svg"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"
+      />
+    </Navbar.Brand>
+  </Navbar>
+  <br />
+  <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">
+      <img
+        alt=""
+        src="/logo.svg"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}
+      React Bootstrap
+    </Navbar.Brand>
+  </Navbar>
+</>
       <input
         className="search"
         type="text"
