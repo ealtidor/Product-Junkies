@@ -57,7 +57,7 @@ function Home(props) {
                 SHOP BY CATEGORY
               </option>
               {categories.map((category) => {
-                return <option value={category}>{category}</option>;
+                return <option key={category }value={category}>{category}</option>;
               })}
             </select>
             <button
@@ -75,7 +75,6 @@ function Home(props) {
             const {
               avatarImg,
               username,
-              createdTime,
               productImg,
               brand,
               productName,
@@ -89,10 +88,9 @@ function Home(props) {
             );
 
             return (
-              <div key={post.id} className="post-container">
+              <div key={`${post.id}`} className="post-container">
                 <img className="home-avatar" src={avatarImg} alt="avatar" />
                 <p className="home-username">{username}</p>
-                <p className="home-time">{createdTime}</p>
                 <img
                   className="home-products"
                   src={productImg}
@@ -101,7 +99,7 @@ function Home(props) {
                 <p className="home-brand">{brand}</p>
                 <p className="home-prodname">{productName}</p>
                 <p>What's Left:</p>
-                <p className="home-quantity">{progressInstance}</p>
+                <span className="home-quantity">{progressInstance}</span>
                 <button
                   className="home-trash"
                   onClick={() => deletePost(post.id)}

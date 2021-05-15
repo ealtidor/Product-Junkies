@@ -23,7 +23,7 @@ const Favorites = (props) => {
           const now = Number(quantityLeft);
           const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
           return (
-            <div key={post.id} className="post-container">
+            <div key={`${post.id}`} className="post-container">
               <img className="home-avatar" src={avatarImg} alt="avatar" />
               <p className="home-username">{username}</p>
               <p className="home-time">{createdTime}</p>
