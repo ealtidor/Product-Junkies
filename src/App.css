@@ -20,12 +20,12 @@
 }
 
 .search {
-  width: 42rem;
+  width: 35rem;
   padding: 10px;
   border-radius: 10px;
   color: black;
   font-size: 18px;
-  opacity: 80%;
+  opacity: 80% !important;
   border-color: black;
 }
 
@@ -261,6 +261,14 @@ span {
   background-color: rgb(42, 134, 120);
   font-weight: bold;
 }
+.home-quantity {
+  width: 215px;
+  display: inline-block;
+  height: 100%;
+  background: rgb(42, 134, 120);
+  margin: 0 2px;
+}
+
 
 /* Responsiveness */
 @media only screen and (max-width: 768px) {

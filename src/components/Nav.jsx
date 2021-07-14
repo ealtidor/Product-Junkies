@@ -9,13 +9,13 @@ function Nav(props) {
         Product JunkEz
       </Link>
       <input
-        // className="search"  /
+        className="search"  
         type="text"
         value={props.findPost}
         onChange={(e) => props.setFindPost(e.target.value)}
         name="searchProduct"
         id="search-product"
-        placeholder="SEARCH JUNK DRAWER"
+        placeholder="SEARCH BY BRAND"
       />
       <Link className="plus-sign" to="/favorites">
         <FontAwesomeIcon icon={faHeart} size="2x" />

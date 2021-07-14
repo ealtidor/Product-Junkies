@@ -30,9 +30,9 @@ function Home(props) {
   );
 
   const searchBar = posts.filter((post) =>
-    post.fields.productName.toLowerCase().includes(props.findPost.toLowerCase())
+    post.fields.brand.toLowerCase().includes(props.findPost.toLowerCase())
   );
-
+console.log(posts)
   const sortedList = props.findPost ? searchBar : filteredPosts;
   return (
     <div>
@@ -57,7 +57,7 @@ function Home(props) {
               SHOP BY CATEGORY 
               </option>
               {categories.map((category) => {
-                return <option key={category }value={category}>{category}</option>;
+                return <option key={category }value={category}>{category}</option>
               })}
             </select>
             <button
@@ -128,12 +128,10 @@ function Home(props) {
               </div>
             );
           })}
-          ;
+          
         </section>
       </main>
-      <footer>
-        <p> © Product JunkEz | Emanuella Altidor, 2021</p>
-      </footer>
+     
     </div>
   );
 }
