@@ -5,26 +5,37 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 
 const Form = (props) => {
-  const [avatarImg, setAvatarImg] = useState("");
-  const [username, setUsername] = useState("");
+  // const [avatarImg, setAvatarImg] = useState("");
+  // const [username, setUsername] = useState("");
   const [productImg, setProductImg] = useState("");
-  const [brand, setBrand] = useState("");
+  // const [brand, setBrand] = useState("");
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
   const [quantityLeft, setQuantityLeft] = useState("");
+
+  const [inputVales, setInputVales] = useState({
+    avatarImg: "",
+    username: "",
+    brand: "",
+    productImg:"",
+    productName:"",
+    category: "",
+    quantityLeft:"",
+  });
   const history = useHistory();
 
+  console.log(inputVales);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    // console.log(e.target.value);
+    // console.log(e.target.name);
+    setInputVales({ ...inputVales, [name]: value });
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const newPost = {
-      avatarImg,
-      username,
-      productImg,
-      brand,
-      productName,
-      category,
-      quantityLeft,
+      ...inputVales
     };
 
     // Post Request
@@ -33,8 +44,8 @@ const Form = (props) => {
     history.push("/");
   };
   // Default photo for Avatar and Product Image
-  const profileImg = avatarImg
-    ? avatarImg
+  const profileImg = inputVales.avatarImg
+    ? inputVales.avatarImg
     : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6mVep8mmwTbVD9A6_0tAkjhiPOUikhenZnH3NGEImOX4eW2pbXJ8E-WmJcWXjcXY-bA&usqp=CAU";
   const newProdImg = productImg
     ? productImg
@@ -49,12 +60,13 @@ const Form = (props) => {
         </label>
         <img className="avatar" src={profileImg} alt="avatar" />
         <input
+          name="avatarImg"
           type="text"
           required
           id="profile"
           placeholder="Paste Image URL"
-          value={avatarImg}
-          onChange={(e) => setAvatarImg(e.target.value)}
+          value={inputVales.avatarImg}
+          onChange={handleChange}
         />
         <label className="username-label" htmlFor="username">
           Junkie Name
@@ -63,8 +75,8 @@ const Form = (props) => {
           type="text"
           required
           id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={inputVales.username}
+          onChange={ handleSubmit}
         />
 
         <label className="brand-label" htmlFor="brand">
@@ -72,10 +84,11 @@ const Form = (props) => {
         </label>
         <input
           type="text"
+          name="brand"
           required
           id="brand"
-          value={brand}
-          onChange={(e) => setBrand(e.target.value)}
+          value={inputVales.brand}
+          onChange={handleChange}
         />
         <label className="productName-label" htmlFor="productName">
           Product Name

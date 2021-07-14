@@ -9,7 +9,7 @@ function Nav(props) {
         Product JunkEz
       </Link>
       <input
-        className="search"
+        // className="search"  /
         type="text"
         value={props.findPost}
         onChange={(e) => props.setFindPost(e.target.value)}
